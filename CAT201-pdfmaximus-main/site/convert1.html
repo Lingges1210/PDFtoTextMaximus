@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFMAXIMUS</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <video id="video-background" autoplay loop>
+        <source src="VIDEO.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="title">
+        <h1>PDFMAXIMUS</h1>
+    </div>
+    <div class="container">
+                <h2>PDF To TXT CONVERTER</h2>
+                <?php include upload.php ?>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="fileToUpload" id="fileToUpload" class="browse" value="Browse"><br><br><br>
+                    <button type="submit" value="Upload" name="submit">Upload PDF</button>
+                    <br>
+                </form>
+    </div>
+</body>
+</html>

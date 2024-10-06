@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+  <video id="video-background" autoplay muted loop>
+    <source src="VIDEO.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="title">
+    <h1>PDFMAXIMUS</h1>
+
+    <!-- Your content here -->
+    <div class="container">
+        <h2>Convert successful!</h2>
+        <br>
+        <p>Click here to retrieve .txt file: <a href="output/' . $fileName . '.txt"" download>Download\</a></p>
+        <br> 
+        <form action="index.html" method="post" enctype="multipart/form-data">
+          <button type="submit" value="Another" name="submit">Convert another PDF</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

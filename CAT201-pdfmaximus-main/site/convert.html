@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="VIDEO.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="title">
+        <h1>PDFMAXIMUS</h1>
+        <!-- Your content here -->
+        <div class="container">
+                <h2>Upload successful!</h2>
+                <p>Click the button below to convert the uploaded file.</p><br>
+                <?php include 'convert.php'; ?>
+                <form action="convert.php" method="post" enctype="multipart/form-data">
+                    <button type="submit" value="Convert" name="submit">Convert</button>
+                </form>
+                <br>
+                <form action="index.html" method="post" enctype="multipart/form-data">
+                    <button type="submit" value="Back" name="submit">Back</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

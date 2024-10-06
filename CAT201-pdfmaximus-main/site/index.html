@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFMAXIMUS</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <video id="video-background" autoplay loop>
+        <source src="VIDEO.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="title">
+        <h1>PDFMAXIMUS</h1>
+    </div>
+    <div class="container">
+        <h1>FILE CONVERTER</h1>
+        <!-- Convert PDF to TXT -->
+        <p><strong>Option 1:</strong> Click the button to convert PDF to TXT.</p>
+        <form id="convertPdfForm" action="convert1.html" method="get">
+            <input type="submit" value="Convert PDF to TXT">
+        </form>
+        <!-- Convert TXT to PDF -->
+        <p><strong>Option 2:</strong> Click the button to convert TXT to PDF.</p>
+        <form id="convertTxtForm" action="convert2.html" method="get">
+            <input type="submit" value="Convert TXT to PDF">
+        </form>
+        <!-- Progress Bar -->
+        <div id="progressBar" style="display: none;">
+            <p><strong>Step 5:</strong> Conversion in progress...</p>
+            <progress value="0" max="100"></progress>
+        </div>
+        <!-- Download Links -->
+        <div id="downloadLinks" style="display: none;">
+            <p><strong>Step 6:</strong> Conversion complete! Download your files:</p>
+            <a href="#" onclick="downloadFile()">Download Converted File</a>
+        </div>
+    </div>
+    <!-- About Us Section -->
+    <div id="about-us-section">
+        <h1>ABOUT US</h1>
+        <div id="about-us-content">
+            <p>Welcome to PDFMAXIMUS! We are a dedicated team passionate about file conversion and providing you with the best tools for your needs.</p>
+            <p>Our mission is to make file conversion seamless and efficient for everyone. Explore our services and experience the power of PDFMAXIMUS.</p>
+        </div>
+    </div>
+    <!-- Features Section -->
+    <div class="features-section">
+        <div class="feature">
+            <div class="icon">
+                <img src="quick2.svg" alt="Quick Conversion Icon">
+            </div>
+            <h2>Quick Conversion Without Email</h2>
+            <p>With just a simple drag and drop, convert a PDF to TXT format and vice versa in seconds. Free to use—no watermarks and no email registration required.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">
+                <img src="security.svg" alt="Safe Document">
+            </div>
+            <h2>Safe Document Processing</h2>
+            <p>PDFMAXIMUS cares about file privacy. All files will be deleted from our servers after one hour.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">
+                <img src="like.svg" alt="Any">
+            </div>
+            <h2>Convert on Any Operating System</h2>
+            <p>Our PDFMAXIMUS converter works on all computers and operating systems including Mac, Windows, and Linux. Need to convert your files offline? Try our offline converter app.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">
+                <img src="cloud.svg" alt="Online">
+            </div>
+            <h2>Online Conversion of Large Files</h2>
+            <p>Convert your PDF files to TXT and vice versa easily, regardless of size. Our servers are cloud-based, making our online converter perfect for larger files. Enjoy!!!!</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; PDFMAXIMUS by Shiva, Lingges, Thanesh, and Hemwaren</p>
+    </footer>
+</body>
+</html>

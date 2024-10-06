@@ -1,0 +1,221 @@
+body {
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Hide scrollbar caused by the video */
+}
+footer {
+    background-color: #f1f1f1;
+    bottom: 0px;
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+  }
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.422); /* Add a semi-transparent background */
+}
+button {
+    background-color: #bf6300;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #bf6300;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+button:hover {
+    background-color: #09004e;
+  }
+button:active {
+    background-color: #1600b9;
+    transform: translateY(1px);
+  }
+  
+
+/* Add styling to the "PDFMAXIMUS" word */
+.title {
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h1 {
+    font-size: 6em; /* Adjust the font size as needed */
+    color: #ffffff; /* Choose a color that fits your design */
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.687); /* Add a subtle text shadow */
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    padding: 20px;
+    font-size: large;
+    border: 0px solid #ccc;
+    border-radius: 7px;
+}
+
+input[type="submit"] {
+    padding: 20px 5px;
+    font-size: x-large;
+    background: linear-gradient(to right, #ff8400, #712200);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Add margin between buttons */
+}
+
+input[type="submit3"] {
+    padding: 20px 5px;
+    font-size: x-large;
+    background: linear-gradient(to right, #ff8400, #712200);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for smooth effect */
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #ff8400, #712200);
+}
+
+input[type="submit3"]:hover {
+    background-color: #4e2800; /* Change background color on hover */
+}
+
+/* Active state */
+input[type="submit"]:active,
+input[type="submit3"]:active {
+    background: linear-gradient(to right, #4e2800, #ff4e00);
+}
+#progressBar {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    border: 1px solid #003cd4;
+    border-radius: 3px;
+}
+
+progress {
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+}
+
+#downloadLink {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #9e9e9e;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#about-us-section {
+    font-family: Helvetica, sans-serif;
+    margin-top: 100px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#about-us-content {
+    text-align: center;
+}
+
+#drop-zone {
+    border: 2px dashed #ff7700;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#drop-zone.dragover {
+    background-color: #ffffff;
+}
+
+.features-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 50px auto; /* Add space at the top of the features section */
+    padding: 20px;
+    transition: opacity 3s ease-in-out;
+}
+
+.feature {
+    flex: 1; /* Each feature box will grow equally */
+    padding: 20px;
+    text-align: center;
+    min-width: 250px; /* Minimum width for smaller screens */
+}
+
+.icon img {
+    width: 120px; /* Adjust icon size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0px; /* Add space above the title */
+}
+
+.feature p {
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 0.5em; /* Add space above the paragraph */
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        max-width: 90%; /* Each feature takes full width */
+    }
+}
